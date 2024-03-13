@@ -64,7 +64,7 @@
 <div class="container">
 <div class="section-header">
     <h2>Gráfica general</h2>
-    <p></p>
+    
 </div>
 
 <div class="row">
@@ -74,37 +74,8 @@
 
     <div class="col-md-6">
 <div class="details">
-<h2></h2>
+<h2><p>En la gráfica mostrada del comportamiento del valor de bitcoin a lo largo del tiempo, se destaca una curva de población cuya forma no lineal refleja una evolución compleja basada en una fórmula matemática que involucra exponenciales y operaciones matemáticas. La asíntota horizontal en 72000 sugiere el límite hacia el cual el valor de bitcoin tiende a estabilizarse, proporcionando una referencia clave para entender la tendencia a largo plazo de la criptomoneda. Las líneas verticales y horizontales en los ejes ofrecen puntos de referencia iniciales, mientras que las marcas en los ejes x e y facilitan la interpretación precisa de la curva</p></h2>
 
-<pre>
-<code>
-&gt;import numpy as np&gt;
-&gt;import matplotlib.pyplot as plt&gt;
-
-&gt; fig, ax = plt.subplots(figsize = (10,5))&gt;
-
-&gt;ax.set(title = 'Comportamiento del valor de bitcoin',\
-xlabel = 'tiempo en años', ylabel = 'valor')&gt;
-
-&gt; dominio = np.arange(0,16,0.25)&gt;
-&gt;  l = 72000&gt;
-&gt;rango = 72000/((53*np.exp(-0.69*dominio))/19 + 1)&gt;
-
-&gt;ax.plot(dominio, rango) # grafica de la curva de población&gt;
-&gt; ax.plot([0, 0], [0, np.max(rango)]) # grafico del eje vertical&gt;
-&gt;   ax.plot([np.min(dominio), np.max(dominio)], [0,0], 'orange')   # gráfico del eje horizontal&gt;
-&gt; ax.plot([0, np.max(dominio)], [l, l], 'r--')  # grafico de la asíntota horizontal&gt;
-&gt; plt.yticks(np.arange(0, 72000, step=10000))&gt;
-&gt;plt.xticks(np.arange(0, 16, step=1))&gt;
-&gt; ax.grid(alpha = 0.6)&gt;
-
-&gt; plt.savefig('solucion_del_PVI.jpg')&gt;
-
-&gt; plt.show()  <code>
-                       
-<!--- -->
-</code>
-</pre>
     
  
 
@@ -131,7 +102,7 @@ xlabel = 'tiempo en años', ylabel = 'valor')&gt;
 <div class="row">
 
     <div class="col-lg-3 col-md-6 footer-info">
-    <p>In alias aperiam. Placeat tempore facere. Officiis voluptate ipsam vel eveniet est dolor et totam porro. Perspiciatis ad omnis fugit molestiae recusandae possimus. Aut consectetur id quis. In inventore consequatur ad voluptate cupiditate debitis accusamus repellat cumque.</p>
+    <p>BITCOIN</p>
     </div>
 
     <div class="col-lg-3 col-md-6 footer-links">
